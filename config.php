@@ -27,7 +27,7 @@ return [
             'author' => 'Povilas Korop',
         ],
         [
-            'link' => 'https://dev.to/gonedark/2018-dev-goals-4abd',
+            'link' => 'https://jason.pureconcepts.net/2018/12/2018-lookbehind-2019-lookahead/',
             'author' => 'Jason McCreary',
         ],
         [
