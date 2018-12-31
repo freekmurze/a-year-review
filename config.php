@@ -94,5 +94,13 @@ return [
             'link' => 'https://twitter.com/enunomaduro/status/1078260669508665345',
             'author' => 'Nuno Maduro',
         ],
+        [
+            'link' => 'https://medium.com/@yemiwebby/my-2018-year-in-review-step-in-the-right-direction-f7bbe0c11731',
+            'author' => 'Olususi Oluyemi'
+        ],
+        [
+            'link' => 'https://medium.com/@ireade/2018-month-by-month-708a0547c5e0',
+            'author' => 'Ire Aderinokun'
+        ],
     ],
 ];
