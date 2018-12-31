@@ -90,5 +90,9 @@ return [
             'link' => 'https://twitter.com/nappdev/status/1078953621046345728',
             'author' => 'Mads Møller',
         ],
+        [
+            'link' => 'https://twitter.com/enunomaduro/status/1078260669508665345',
+            'author' => 'Nuno Maduro',
+        ],
     ],
 ];
