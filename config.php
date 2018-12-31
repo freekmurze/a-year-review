@@ -80,7 +80,7 @@ return [
         ],
         [
             'link' => 'https://dyrynda.com.au/blog/farewell-2018',
-            'author' => 'Micheal Dyrynda',
+            'author' => 'Michael Dyrynda',
         ],
         [
             'link' => 'https://digitalevangelist.net/blog/2018',
