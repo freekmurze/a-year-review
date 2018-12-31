@@ -16,10 +16,14 @@
 
         <link rel="home" href="{{ $page->baseUrl }}">
     </head>
-    <body class="font-sans bg-grey-lightest">
-        <main class="container mx-auto mt-16">
+    <body class="font-sans bg-grey-lightest flex flex-col min-h-screen">
+        <main class="container mx-auto mt-16 flex-grow">
             @yield('body')
         </main>
+
+        <footer class="w-full text-center my-4">
+            Made by <a class="text-blue-dark hover:no-underline" href="https://www.dieterstinglhamber.me">Elhebert</a> using&nbsp;<a class="text-blue-dark hover:no-underline" href="https://tailwindcss.com">tailwindcss</a>, powered by&nbsp;<a class="text-blue-dark hover:no-underline" href="https://jigsaw.tighten.co">Jigsaw</a> and hosted on&nbsp;<a class="text-blue-dark hover:no-underline" href="https://www.netlify.com">Netlify</a>.
+        </footer>
 
         <script type="text/javascript">
             var _paq = _paq || [];
