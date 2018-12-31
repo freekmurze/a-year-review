@@ -78,5 +78,13 @@ return [
             'link' => 'https://fideloper.com/2018',
             'author' => 'Chris Fidao',
         ],
+        [
+            'link' => 'https://dyrynda.com.au/blog/farewell-2018',
+            'author' => 'Micheal Dyrynda',
+        ],
+        [
+            'link' => 'https://digitalevangelist.net/blog/2018',
+            'author' => 'Steven Grant',
+        ],
     ],
 ];
