@@ -96,11 +96,19 @@ return [
         ],
         [
             'link' => 'https://medium.com/@yemiwebby/my-2018-year-in-review-step-in-the-right-direction-f7bbe0c11731',
-            'author' => 'Olususi Oluyemi'
+            'author' => 'Olususi Oluyemi',
         ],
         [
             'link' => 'https://medium.com/@ireade/2018-month-by-month-708a0547c5e0',
-            'author' => 'Ire Aderinokun'
+            'author' => 'Ire Aderinokun',
+        ],
+        [
+            'link' => 'https://sunnysingh.io/blog/looking-back-on-2018',
+            'author' => 'Sunny Singh',
+        ],
+        [
+            'link' => 'https://nathanbarry.com/2018-review/',
+            'author' => 'Nathan Berry',
         ],
     ],
 ];
