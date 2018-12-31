@@ -64,15 +64,19 @@ return [
         ],
         [
             'link' => 'http://www.abdelilahlbardi.com/post/good-bye-2018',
-            'author' => 'Abdelilah Lbardi'
+            'author' => 'Abdelilah Lbardi',
         ],
         [
             'link' => 'https://miguelpiedrafita.com/2018/',
-            'author' => 'Miguel Piedrafita'
+            'author' => 'Miguel Piedrafita',
         ],
         [
             'link' => 'https://link.medium.com/K6S0024V4S',
-            'author' => 'Mohammed S. Shurrab'
+            'author' => 'Mohammed S. Shurrab',
+        ],
+        [
+            'link' => 'https://fideloper.com/2018',
+            'author' => 'Chris Fidao',
         ],
     ],
 ];
