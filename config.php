@@ -86,5 +86,9 @@ return [
             'link' => 'https://digitalevangelist.net/blog/2018',
             'author' => 'Steven Grant',
         ],
+        [
+            'link' => 'https://twitter.com/nappdev/status/1078953621046345728',
+            'author' => 'Mads Møller',
+        ],
     ],
 ];
