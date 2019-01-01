@@ -134,5 +134,9 @@ return [
             'link' => 'https://ahmedash.com/blog/year-review/2018/',
             'author' => 'Ahmed Ashraf',
         ],
+        [
+            'link' => 'https://davidhemphill.com/2018-in-review',
+            'author' => 'David Hemphill',
+        ],
     ],
 ];
