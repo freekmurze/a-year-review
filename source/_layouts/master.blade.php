@@ -7,12 +7,12 @@
         <link rel="stylesheet" href="{{ mix('css/app.css', 'assets/build') }}">
 
         <title>A year review</title>
-        <meta name="description" content="Review about the past year" />
+        <meta name="description" content="Review about the past year by people in tech" />
 
         <meta property="og:site_name" content="A yearly review">
         <meta property="og:type" content="website" />
         <meta property="og:title" content="A yearly review" />
-        <meta property="og:description" content="Review about the past year" />
+        <meta property="og:description" content="Review about the past year by people in tech" />
 
         <link rel="home" href="{{ $page->baseUrl }}">
     </head>
