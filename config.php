@@ -110,5 +110,17 @@ return [
             'link' => 'https://nathanbarry.com/2018-review/',
             'author' => 'Nathan Berry',
         ],
+        [
+            'link' => 'https://twitter.com/TaelurAlexis/status/1079909695006007297',
+            'author' => "Tae'lur Alexis",
+        ],
+        [
+            'link' => 'https://medium.com/@shairez/lessons-from-2018-and-why-i-wont-be-speaking-in-2019-eca31b987a27',
+            'author' => 'Shai Reznik',
+        ],
+        [
+            'link' => 'https://medium.com/@unicodeveloper/2018-in-review-shattering-expectations-9418f2d720cc',
+            'author' => 'Prosper Otemuyiwa',
+        ],
     ],
 ];
