@@ -130,5 +130,9 @@ return [
             'link' => 'https://charlimarie.com/blog/2018-review',
             'author' => 'Charli Marie',
         ],
+        [
+            'link' => 'https://ahmedash.com/blog/year-review/2018/',
+            'author' => 'Ahmed Ashraf',
+        ],
     ],
 ];
