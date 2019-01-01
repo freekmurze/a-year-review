@@ -126,5 +126,9 @@ return [
             'link' => 'https://www.a11ywithlindsey.com/blog/2018-year-in-review/',
             'author' => 'Lindsey Kopacz',
         ],
+        [
+            'link' => 'https://charlimarie.com/blog/2018-review',
+            'author' => 'Charli Marie',
+        ],
     ],
 ];
