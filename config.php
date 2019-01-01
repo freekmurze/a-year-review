@@ -122,5 +122,9 @@ return [
             'link' => 'https://medium.com/@unicodeveloper/2018-in-review-shattering-expectations-9418f2d720cc',
             'author' => 'Prosper Otemuyiwa',
         ],
+        [
+            'link' => 'https://www.a11ywithlindsey.com/blog/2018-year-in-review/',
+            'author' => 'Lindsey Kopacz',
+        ],
     ],
 ];
