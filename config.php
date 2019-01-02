@@ -138,5 +138,9 @@ return [
             'link' => 'https://davidhemphill.com/2018-in-review',
             'author' => 'David Hemphill',
         ],
+        [
+            'link' => 'https://justinjackson.ca/2018-review',
+            'author' => 'Justin Jackson',
+        ],
     ],
 ];
