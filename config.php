@@ -150,5 +150,9 @@ return [
             'link' => 'https://www.troyhunt.com/2018-retrospective/',
             'author' => 'Troy Hunt',
         ],
+        [
+            'link' => 'https://scotthelme.co.uk/year-in-review-2019/',
+            'author' => 'Scott Helme',
+        ],
     ],
 ];
