@@ -146,5 +146,9 @@ return [
             'link' => 'https://joedixon.co.uk/2018-the-year-in-review',
             'author' => 'Joe Dixon',
         ],
+        [
+            'link' => 'https://www.troyhunt.com/2018-retrospective/',
+            'author' => 'Troy Hunt',
+        ],
     ],
 ];
