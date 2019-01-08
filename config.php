@@ -154,5 +154,9 @@ return [
             'link' => 'https://scotthelme.co.uk/year-in-review-2019/',
             'author' => 'Scott Helme',
         ],
+        [
+            'link' => 'https://medium.com/@sarah_edo/reflections-on-2018-f0d4da8ff15e',
+            'author' => 'Sarah Drasner',
+        ],
     ],
 ];
