@@ -1,8 +1,4 @@
 [build]
 
-command = "npm run production"
-publish = "build_production"
-
-[build.environment]
-
-PHP_VERSION = "7.2"
+command = "npm run generate"
+publish = "dist"
