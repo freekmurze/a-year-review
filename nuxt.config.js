@@ -32,6 +32,6 @@ export default {
   ],
 
   purgeCSS: {
-    whitelist: ['dark-mode'],
+    whitelist: ['dark-mode', 'bg-invers'],
   },
 }
