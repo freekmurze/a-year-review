@@ -1,8 +1,6 @@
 export default {
   mode: 'universal',
-  /*
-   ** Headers of the page
-   */
+
   head: {
     title: '2019 in reviews',
     meta: [
@@ -24,37 +22,16 @@ export default {
     ],
     link: [{ rel: 'home', href: 'https://www.a-year-review.tech' }],
   },
-  /*
-   ** Customize the progress-bar color
-   */
+
   loading: { color: '#3164f2' },
-  /*
-   ** Global CSS
-   */
-  css: [],
-  /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: [],
-  /*
-   ** Nuxt.js dev-modules
-   */
+
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@nuxt/typescript-build',
   ],
-  /*
-   ** Nuxt.js modules
-   */
-  modules: [],
-  /*
-   ** Build configuration
-   */
-  build: {
-    /*
-     ** You can extend webpack config here
-     */
-    extend() {},
+
+  purgeCSS: {
+    whitelist: ['dark-mode'],
   },
 }
