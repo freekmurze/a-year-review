@@ -29,7 +29,7 @@ export default Vue.extend({
     },
 
     setTheme(theme: string): void {
-      this.isDarkTheme = !this.isDarkTheme
+      this.isDarkTheme = theme === 'dark'
 
       document.body.setAttribute('data-theme', theme)
     },
