@@ -30,7 +30,7 @@ import Vue from 'vue'
 import ALink from '@/components/ui/ALink.vue'
 import List from '@/components/ui/List.vue'
 import ListItem from '@/components/ui/ListItem.vue'
-import ReviewsData from '@/components/Data/Reviews.vue'
+import ReviewsData from '@/components/data/Reviews.vue'
 
 export default Vue.extend({
   name: 'Home',
