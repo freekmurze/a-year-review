@@ -5,29 +5,41 @@ export default Vue.extend({
   name: 'ThemeData',
 
   data: () => ({
+    themes: {
+      dark: '(prefers-color-scheme: dark)',
+      light: '(prefers-color-scheme: light)',
+    },
     isDarkTheme: false,
   }),
 
   mounted() {
-    const mq = window.matchMedia('(prefers-color-scheme: dark)')
+    Object.entries(this.themes).forEach(([theme, mediaQuery]) => {
+      const mq: MediaQueryList = window.matchMedia(mediaQuery)
+      mq.addListener(this.themeListener)
 
-    mq.addListener(e => {
-      if (!e) {
-        return
+      if (mq.matches) {
+        this.setTheme(theme)
       }
-
-      if (this.isDarkTheme !== e.matches) {
-        this.switchTheme()
-      }
-
-      this.isDarkTheme = e.matches
     })
   },
 
   methods: {
     switchTheme(): void {
+      this.setTheme(this.isDarkTheme ? 'light' : 'dark')
+    },
+
+    setTheme(theme: string): void {
       this.isDarkTheme = !this.isDarkTheme
-      document.body.classList.toggle('dark-mode')
+
+      document.body.setAttribute('data-theme', theme)
+    },
+
+    themeListener(event: MediaQueryListEvent): void {
+      Object.entries(this.themes).forEach(([theme, mediaQuery]) => {
+        if (event.media === mediaQuery) {
+          this.setTheme(theme)
+        }
+      })
     },
   },
 
