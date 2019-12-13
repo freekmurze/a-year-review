@@ -13,13 +13,13 @@ export default Vue.extend({
     preferedTheme: localStorage.getItem('preferedTheme'),
   }),
 
-  created() {
+  created(): void {
     if (this.preferedTheme) {
       this.setTheme(this.preferedTheme)
     }
   },
 
-  mounted() {
+  mounted(): void {
     Object.entries(this.themes).forEach(this.initilizeListener)
   },
 
@@ -50,7 +50,7 @@ export default Vue.extend({
       })
     },
 
-    initilizeListener([theme, mediaQuery]: [string, string]) {
+    initilizeListener([theme, mediaQuery]: [string, string]): void {
       const mq: MediaQueryList = window.matchMedia(mediaQuery)
       mq.addListener(this.themeListener)
 
