@@ -19,6 +19,14 @@ export default {
         property: 'og:description',
         content: '2019 reviews by people in tech',
       },
+      {
+        name: 'supported-color-schemes',
+        content: 'dark light only',
+      },
+      {
+        name: 'color-scheme',
+        content: 'dark light only',
+      },
     ],
     link: [{ rel: 'home', href: 'https://www.a-year-review.tech' }],
   },

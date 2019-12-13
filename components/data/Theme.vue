@@ -10,22 +10,25 @@ export default Vue.extend({
       light: '(prefers-color-scheme: light)',
     },
     isDarkTheme: false,
+    preferedTheme: localStorage.getItem('preferedTheme'),
   }),
 
-  mounted() {
-    Object.entries(this.themes).forEach(([theme, mediaQuery]) => {
-      const mq: MediaQueryList = window.matchMedia(mediaQuery)
-      mq.addListener(this.themeListener)
+  created() {
+    if (this.preferedTheme) {
+      this.setTheme(this.preferedTheme)
+    }
+  },
 
-      if (mq.matches) {
-        this.setTheme(theme)
-      }
-    })
+  mounted() {
+    Object.entries(this.themes).forEach(this.initilizeListener)
   },
 
   methods: {
     switchTheme(): void {
-      this.setTheme(this.isDarkTheme ? 'light' : 'dark')
+      const theme = this.isDarkTheme ? 'light' : 'dark'
+
+      this.setTheme(theme)
+      this.setPreferedTheme(theme)
     },
 
     setTheme(theme: string): void {
@@ -34,12 +37,26 @@ export default Vue.extend({
       document.body.setAttribute('data-theme', theme)
     },
 
+    setPreferedTheme(preferedTheme: string): void {
+      localStorage.setItem('preferedTheme', preferedTheme)
+      this.preferedTheme = preferedTheme
+    },
+
     themeListener(event: MediaQueryListEvent): void {
       Object.entries(this.themes).forEach(([theme, mediaQuery]) => {
-        if (event.media === mediaQuery) {
+        if (this.preferedTheme === null && event.media === mediaQuery) {
           this.setTheme(theme)
         }
       })
+    },
+
+    initilizeListener([theme, mediaQuery]: [string, string]) {
+      const mq: MediaQueryList = window.matchMedia(mediaQuery)
+      mq.addListener(this.themeListener)
+
+      if (this.preferedTheme === null && mq.matches) {
+        this.setTheme(theme)
+      }
     },
   },
 
