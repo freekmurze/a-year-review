@@ -1,3 +1,7 @@
+import fs from 'fs'
+import { Feed } from 'feed'
+import reviews from './static/reviews.json'
+
 export default {
   mode: 'universal',
 
@@ -28,7 +32,14 @@ export default {
         content: 'dark light only',
       },
     ],
-    link: [{ rel: 'home', href: 'https://www.a-year-review.tech' }],
+    link: [
+      { rel: 'home', href: 'https://www.a-year-review.tech' },
+      {
+        rel: 'self',
+        type: 'application/atom+xml',
+        href: 'https://www.a-year-review.tech/feed.xml',
+      },
+    ],
   },
 
   loading: { color: '#3164f2' },
@@ -41,5 +52,28 @@ export default {
 
   purgeCSS: {
     whitelist: ['dark-mode', 'bg-invers'],
+  },
+
+  build: {
+    extend() {
+      const feed = new Feed({
+        title: '2019 in reviews',
+        description: '2019 reviews by people in tech',
+        link: 'https://www.a-year-review.tech/feed.xml',
+      })
+
+      reviews.forEach(review => {
+        feed.addItem({
+          title: review.author,
+          link: review.link,
+        })
+      })
+
+      fs.writeFile('./static/feed.xml', feed.rss2(), err => {
+        if (err) {
+          throw err
+        }
+      })
+    },
   },
 }
