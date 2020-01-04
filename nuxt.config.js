@@ -18,11 +18,6 @@ export default {
       },
       { property: 'og:site_name', content: '2019 in reviews' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:title', content: '2019 in reviews' },
-      {
-        property: 'og:description',
-        content: '2019 reviews by people in tech',
-      },
       {
         name: 'supported-color-schemes',
         content: 'dark light only',
@@ -75,5 +70,13 @@ export default {
         }
       })
     },
+  },
+
+  generate: {
+    routes: ['/2018', '/2019'],
+  },
+
+  env: {
+    currentYear: '2019',
   },
 }
