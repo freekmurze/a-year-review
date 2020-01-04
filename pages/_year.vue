@@ -73,5 +73,9 @@ export default Vue.extend({
       return `${url}/${file}`
     },
   },
+
+  validate({ params }) {
+    return ['2018', '2019'].includes(params.year)
+  },
 })
 </script>
