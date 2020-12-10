@@ -5,6 +5,7 @@
         <ui-select id="yearSelector" @change="onYearChange" name="yearSelector">
           <option :selected="isYear(2018)" value="2018">2018</option>
           <option :selected="isYear(2019)" value="2019">2019</option>
+          <option :selected="isYear(2020)" value="2020">2020</option>
         </ui-select>
         in reviews
       </h-one>

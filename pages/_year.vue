@@ -82,7 +82,7 @@ export default createComponent({
   },
 
   validate({ params }: Context) {
-    return ['2018', '2019'].includes(params.year)
+    return ['2018', '2019', '2020'].includes(params.year)
   },
 })
 </script>

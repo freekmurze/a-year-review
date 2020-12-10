@@ -6,7 +6,7 @@ export default {
   mode: 'universal',
 
   head: {
-    title: '2019 in reviews',
+    title: '2020 in reviews',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -14,9 +14,9 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: '2019 reviews by people in tech',
+        content: '2020 reviews by people in tech',
       },
-      { property: 'og:site_name', content: '2019 in reviews' },
+      { property: 'og:site_name', content: '2020 in reviews' },
       { property: 'og:type', content: 'website' },
       {
         name: 'supported-color-schemes',
@@ -54,8 +54,8 @@ export default {
   build: {
     extend() {
       const feed = new Feed({
-        title: '2019 in reviews',
-        description: '2019 reviews by people in tech',
+        title: '2020 in reviews',
+        description: '2020 reviews by people in tech',
         link: 'https://www.a-year-review.tech/feed.xml',
       })
 
@@ -75,10 +75,10 @@ export default {
   },
 
   generate: {
-    routes: ['/2018', '/2019'],
+    routes: ['/2018', '/2019', '/2020'],
   },
 
   env: {
-    currentYear: '2019',
+    currentYear: '2020',
   },
 }
